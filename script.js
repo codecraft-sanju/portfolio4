@@ -1,3 +1,20 @@
+
+const hamburger = document.getElementById('hamburger');
+const mobileMenu = document.getElementById('mobile-menu');
+const closeBtn = document.getElementById('close-btn');
+
+// Toggle open/close for mobile menu
+hamburger.addEventListener('click', () => {
+    mobileMenu.classList.toggle('active');
+    hamburger.classList.toggle('active');
+});
+
+closeBtn.addEventListener('click', () => {
+    mobileMenu.classList.remove('active');
+    hamburger.classList.remove('active');
+});
+
+
 let index = 0;
 const testimonials = document.querySelectorAll('.testimonial-card');
 const totalTestimonials = testimonials.length;

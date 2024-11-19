@@ -61,7 +61,7 @@ header ul.nav-list li a.nav-link:hover {
 
 /* Hamburger Icon */
 .hamburger {
-    display: none;
+    
     flex-direction: column;
     width: 25px;
     height: 20px;
@@ -89,7 +89,11 @@ header ul.nav-list li a.nav-link:hover {
     padding: 20px;
 }
 .mobile-menu.active {
-    transform: translateX(0); /* Show the menu when active */
+    transform: translateX(0);
+    -webkit-transform: translateX(00);
+    -moz-transform: translateX(00);
+    -ms-transform: translateX(00);
+    -o-transform: translateX(00);
 }
 .hamburger.active {
     background-color: #007BFF; /* Optional: add a color change for active hamburger */
@@ -141,12 +145,13 @@ header ul.nav-list li a.nav-link:hover {
 
 /* Hero Section */
 .hero {
-    background: #fff;
+  
     color:black;
     text-align: center;
-    padding: 100px 20px;
-    position: relative;
-    margin-top: 5rem;
+    /* padding: 100px 20px; */
+    padding: 100px;
+    /* position: relative; */
+    /* margin-top: 5rem; */
 }
 
 .hero h2 {
@@ -485,7 +490,7 @@ footer {
 /* Responsive Media Queries */
 @media (max-width: 768px) {
     header .container {
-        flex-direction: column;
+        /* flex-direction: column; */
         text-align: center;
     }
 
@@ -597,6 +602,17 @@ footer {
     .hero h2 {
         font-size: 1.8rem;
     }
+    .hero{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      /* padding-top: 100px; */
+      height: 60vh;
+   
+       
+}
+   
 
     .hero p {
         font-size: 0.9rem;

@@ -11,12 +11,13 @@
 </head>
 
 <body>
-    <!-- Header Section -->
-    <header>
+
+
+     <header>
         <div class="container">
             <h1 class="logo">Muskan's Portfolio</h1>
-            <!-- Desktop Navigation -->
-            <nav class="desktop-nav">
+            
+             <nav class="desktop-nav">
                 <ul class="nav-list">
                     <li><a href="#hero" class="nav-link">Home</a></li>
                     <li><a href="#about" class="nav-link">About</a></li>
@@ -25,14 +26,14 @@
                     <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
                     <li><a href="#contact" class="nav-link">Contact</a></li>
                 </ul>
-            </nav>
+            </nav> 
 
             <!-- Mobile Hamburger Menu -->
             <div class="hamburger" id="hamburger">
                 <span></span>
                 <span></span>
                 <span></span>
-            </div>
+            </div> 
 
             <!-- Mobile Navigation -->
             <nav id="mobile-menu" class="mobile-menu">
@@ -47,9 +48,9 @@
                 </ul>
             </nav>
         </div>
-    </header>
+    </header> 
 
-    <!-- Hero Section -->
+    
     <section id="hero" class="hero">
         <div class="container">
            
@@ -245,12 +246,7 @@
         AOS.init({ duration: 1000, once: true });
 
         // Toggle Navbar for Mobile View
-        const hamburger = document.getElementById('hamburger');
-        const navList = document.querySelector('.nav-list');
-        hamburger.addEventListener('click', () => {
-            navList.classList.toggle('active');
-            hamburger.classList.toggle('active');
-        });
+      
     </script>
     <script src="script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
